@@ -2,6 +2,10 @@
 
 Leaflet plugin that enables mouseover Tooltips from a UtfGrid layer.
 
+### Requirements
+
+This plugin requires [L.UtfGrid](https://github.com/danzel/Leaflet.utfgrid).
+
 ### Usage Example
 
 ```js
