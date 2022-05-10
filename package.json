@@ -13,9 +13,13 @@
   "keywords": [
     "leaflet",
     "maps",
-    "restore"
+    "utfgrid"
   ],
   "author": "Scott Haefner",
   "license": "CC0",
-  "homepage": "https://github.com/shaefner-usgs/Leaflet.mouseOverLayer#readme"
+  "homepage": "https://github.com/shaefner-usgs/Leaflet.mouseOverLayer#readme",
+  "devDependencies": {
+    "leaflet": "^1.8.0",
+    "utfgrid": "1.0.0"
+  }
 }
