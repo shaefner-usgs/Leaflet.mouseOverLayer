@@ -1,3 +1,5 @@
+/* global L */
+
 require('leaflet');
 require('leaflet.utfgrid');
 
