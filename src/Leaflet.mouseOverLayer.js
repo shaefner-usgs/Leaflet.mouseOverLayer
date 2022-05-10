@@ -1,3 +1,4 @@
+require('leaflet');
 require('leaflet.utfgrid');
 
 L.MouseOverLayer = L.LayerGroup.extend({
