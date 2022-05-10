@@ -1,3 +1,5 @@
+require('utfgrid');
+
 L.MouseOverLayer = L.LayerGroup.extend({
   initialize: function (options) {
     // Create the data and tile layers
