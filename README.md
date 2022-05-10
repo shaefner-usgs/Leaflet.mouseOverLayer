@@ -5,7 +5,7 @@ Leaflet plugin that enables mouseover Tooltips from a UtfGrid layer.
 ### Usage Example
 
 ```js
-L.mouseOverLayer(<Object> options);
+var layer = L.mouseOverLayer(<Object> options);
 ```
 
 ### Options
