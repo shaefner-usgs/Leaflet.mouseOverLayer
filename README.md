@@ -1,6 +1,6 @@
 # Leaflet.mouseOverLayer
 
-Leaflet plugin that enables mouseover Tooltips from a UtfGrid layer.
+Leaflet plugin that enables mouseover Tooltips on a TileLayer using data from a UtfGrid layer.
 
 ### Requirements
 
