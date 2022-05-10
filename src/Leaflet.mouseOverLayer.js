@@ -1,4 +1,4 @@
-require('utfgrid');
+require('leaflet.utfgrid');
 
 L.MouseOverLayer = L.LayerGroup.extend({
   initialize: function (options) {
