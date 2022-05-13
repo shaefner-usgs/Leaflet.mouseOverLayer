@@ -4,8 +4,8 @@ require('leaflet');
 require('leaflet.utfgrid');
 
 /**
- * Leaflet plugin that enables mouseover Tooltips on a TileLayer using data from 
- * a UtfGrid layer.
+ * This class extends L.LayerGroup to enable mouseover Tooltips on a TileLayer 
+ * using data from a UtfGrid layer.
  */
 L.MouseOverLayer = L.LayerGroup.extend({
   initialize: function (options) {
