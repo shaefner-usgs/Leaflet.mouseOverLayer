@@ -28,10 +28,9 @@ L.MouseOverLayer = L.LayerGroup.extend({
     }
   },
 
-  // --------------------------------------------------
-  // Override onAdd, onRemove methods from L.LayerGroup
-  // --------------------------------------------------
-
+  /**
+   * Override onAdd from L.LayerGroup.
+   */
   onAdd: function (map) {
     L.LayerGroup.prototype.onAdd.call(this, map);
 
@@ -41,6 +40,9 @@ L.MouseOverLayer = L.LayerGroup.extend({
     }
   },
 
+  /**
+   * Override onRemove from L.LayerGroup.
+   */
   onRemove: function (map) {
     L.LayerGroup.prototype.onRemove.call(this, map);
 
@@ -48,6 +50,13 @@ L.MouseOverLayer = L.LayerGroup.extend({
       this._dataLayer.off('mouseover', this._onMouseOver, this);
       this._dataLayer.off('mouseout', this._onMouseOut, this);
     }
+  },
+
+  /**
+   * Hide the tooltip.
+   */
+  _onMouseOut: function () {
+    this._tooltip.remove();
   },
 
   /**
@@ -59,13 +68,6 @@ L.MouseOverLayer = L.LayerGroup.extend({
     this._tooltip.setContent(L.Util.template(this._tiptext, e.data));
     this._tooltip.setLatLng(e.latlng);
     this._tooltip.addTo(this._map);
-  },
-
-  /**
-   * Hide the tooltip.
-   */
-  _onMouseOut: function () {
-    this._tooltip.remove();
   }
 });
 
